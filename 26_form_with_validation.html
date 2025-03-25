@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title>registration form</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;" >registration form : </h1>
+    <form action="02_basic_tag.html" method="get" >   
+    <table  align="center" border="1" cellspacing="0">
+        <tr><th>Name</th><td><input type="text" placeholder="enter your name" pattern="[a-zA-Z ]+"  title="please enter your name" name="uname" required ></td></tr>
+        <tr><th>Father Name</th><td><input type="text" value="singaram ji" readonly name="fname" required ></td></tr>
+        <tr><th>Mobile</th><td><input type="text" name="mob" required></td></tr>
+        <tr><th>password</th><td><input type="password" name="pass" required ></td></tr>
+        <!-- <tr><td></td><td><input type="button" onclick="alert('hi chetan')" value="button">   <input type="reset" value="clear" > </td></tr> -->
+        <!-- <tr><td></td><td><button onclick="alert('this is button tag')" >register</button> </td></tr> -->
+        <tr><th>Select Gender</th><td>Male<input type="radio" name="gen" value="male"  required> Female<input type="radio" name="gen" value="female" required></td></tr>
+        <tr><th>hobbies</th> <td>cricket <input type="checkbox" required name="hobbies" value="cricket" >football <input type="checkbox" required name="hobbies" value="football" > running <input type="checkbox" required name="hobbies" value="running"> </td></tr>
+        <tr><th>Select State</th>
+           <td>
+            <select required name="State">
+                <option value="">------</option>
+                <option selected >mp</option>
+                <option value="rajsthan" >rj</option>
+                <option>up</option>
+            </select>
+           </td>
+         </tr>
+         <tr><th>Select Skill</th>
+            <td>
+             <select required  name="Skill" multiple size="3" >
+                 <option >c language</option>
+                 <option >python</option>
+                 <option>java</option>
+                 <option>html</option>
+                 <option>CSS</option>
+                 <option>javascript</option>
+                 <option>php</option>
+             </select>
+            </td>
+          </tr>
+          <tr><th>Choose File</th><td><input required type="file" name="file"></td></tr>
+          <tr><th>Choose Files</th><td><input required type="file" name="file" multiple></td></tr>
+          <tr><td><input type ="checkbox" required value="true" name="check" style="margin-left: 30%;"></td><th>i agree this term and condtion</th></tr>
+          <tr><td></td><td><input type="submit"  value="register">   <input type="reset" value="clear" > </td></tr>
+    </table>
+    </form> 
+    </body>
+</html>

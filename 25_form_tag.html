@@ -4,8 +4,8 @@
     </head>
     <body>
         <h1 style="text-align: center;" >registration form : </h1>
-    <form action="02_basic_tag.html" >   
-    <table align="center">
+    <form action="02_basic_tag.html" method="get" >   
+    <table style="background-color: blue;color: azure;" align="center" border="1" cellspacing="0">
         <tr><th>Name</th><td><input type="text" name="uname"></td></tr>
         <tr><th>Father Name</th><td><input type="text" name="fname"></td></tr>
         <tr><th>Mobile</th><td><input type="text" name="mob"></td></tr>
@@ -26,7 +26,7 @@
          </tr>
          <tr><th>Select Skill</th>
             <td>
-             <select name="Skill" multiple size="3" >
+             <select style="color: blue; background-color: darkgray;" name="Skill" multiple size="3" >
                  <option >c language</option>
                  <option >python</option>
                  <option>java</option>
@@ -37,9 +37,9 @@
              </select>
             </td>
           </tr>
-          <tr><td><input type ="checkbox" value="true" name="check" style="margin-left: 30%;"></td><th>i agree this term and condtion</th></tr>
           <tr><th>Choose File</th><td><input type="file" name="file"></td></tr>
           <tr><th>Choose Files</th><td><input type="file" name="file" multiple></td></tr>
+          <tr><td><input type ="checkbox" value="true" name="check" style="margin-left: 30%;"></td><th>i agree this term and condtion</th></tr>
           <tr><td></td><td><input type="submit"  value="register">   <input type="reset" value="clear" > </td></tr>
     </table>
     </form> 
