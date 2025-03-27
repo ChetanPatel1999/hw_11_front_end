@@ -8,8 +8,8 @@
     <table  align="center" border="1" cellspacing="0">
         <tr><th>Name</th><td><input type="text" placeholder="enter your name" pattern="[a-zA-Z ]+"  title="please enter your name" name="uname" required ></td></tr>
         <tr><th>Father Name</th><td><input type="text" value="singaram ji" readonly name="fname" required ></td></tr>
-        <tr><th>Mobile</th><td><input type="text" name="mob" required></td></tr>
-        <tr><th>password</th><td><input type="password" name="pass" required ></td></tr>
+        <tr><th>Mobile</th><td><input type="text" name="mob" required maxlength="10" pattern="[0-9]+" minlength="10" title="please enter 10 number" ></td></tr>
+        <tr><th>password</th><td><input type="password" name="pass" minlength="6" required ></td></tr>
         <!-- <tr><td></td><td><input type="button" onclick="alert('hi chetan')" value="button">   <input type="reset" value="clear" > </td></tr> -->
         <!-- <tr><td></td><td><button onclick="alert('this is button tag')" >register</button> </td></tr> -->
         <tr><th>Select Gender</th><td>Male<input type="radio" name="gen" value="male"  required> Female<input type="radio" name="gen" value="female" required></td></tr>
