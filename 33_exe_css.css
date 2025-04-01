@@ -1,0 +1,33 @@
+/*here we use selector   */
+/* universal selector */
+* {
+    color: red;
+}
+
+h1 {
+    background-color: blue;
+    color: wheat;
+}
+
+button {
+    background-color: aqua;
+    color: white;
+}
+
+p {
+    background-color: black;
+}
+
+/* this is id selector */
+#heading {
+    background-color: blueviolet;
+}
+
+/* this is class selector */
+.myclass {
+    background-color: red;
+}
+
+body {
+    background-color: rgb(99, 139, 139);
+}
