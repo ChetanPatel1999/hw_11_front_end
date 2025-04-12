@@ -1,0 +1,45 @@
+<!-- display property in css -->
+ <!-- 
+inline :-takes only space required by the element no margin set top or bottom.
+block :- take full space available in width.
+inline block :- similar to inline but we can set margine & padding.
+none :-To remove element from document flow,no space is reserved for element. 
+ -->
+<!-- 
+Visibility:-
+visibility : hidden;
+space is reserved for element. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    div{
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border: 2px solid black;
+        /* display: inline; */
+        display: inline-block;
+    }
+    #id1{
+        /* display: none; */
+        visibility: hidden;
+    }
+    button{
+        display:block;
+        margin: 10px;
+    }
+   </style> 
+</head>
+<body>
+    <h1>display element</h1>
+    <div>box1</div>
+    <div id="id1" >box2</div>
+    <div>box3</div>
+    <button>click me!</button>
+    <button>click me!</button>
+    <button>click me!</button>
+</body>
+</html>
