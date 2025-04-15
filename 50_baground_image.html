@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        #box1{
+            background-image: url(image/pic1.png);
+            background-size: cover;
+        }
+        #box2{
+            background-image: url(image/fox.jpg);
+            /* background-size:contain;
+            background-repeat: no-repeat; */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+        form{
+            border: 2px solid red;
+            width: 50%;
+            background-image: url(image/pic4.jpg);
+            background-size: cover;
+        }
+        form input{
+            background-color:inherit;
+            border: 2px solid rgb(190, 28, 55);
+            border-radius: 20px;
+        }
+        h1{
+            background-image: url(image/fox.jpg);
+            background-size: cover;
+            background-position: center;
+            -webkit-background-clip: text;
+            color:transparent;
+            width:fit-content;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+  <div id="box1">box1</div>  
+  <div id="box2">fox</div>  
+  <div>box3</div>  
+  <div>box4</div>  
+  <pre>
+  <form>
+    name : <input type="text" >
+
+    age  : <input type="text" >
+
+    city : <input type="text" >
+  </form>
+  <h1>India</h1>
+</pre>
+</body>
+</html>
