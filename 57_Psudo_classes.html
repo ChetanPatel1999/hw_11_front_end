@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border:2px solid black;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 30px;
+        color: white;
+    }
+    #out{
+        width: 100%;
+        height: 120px;
+        background-color: white;
+        border:2px solid black;
+    }
+    div:first-child
+    {
+        background-color: blue;
+    }
+    div:last-child
+    {
+        background-color: black;
+    }
+    /* Targets elements with no children (including text nodes). */
+    div:empty
+    {
+        display: none;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="out" >
+        <div>box1</div>
+        <div>box2</div>
+        <div></div>
+        <div>box4</div>
+        <div>box5</div>
+    </div>
+</body>
+
+</html>

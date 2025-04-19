@@ -30,6 +30,16 @@ Style an element when it gets focus -->
    {
     color: blueviolet;
    }
+   /* Targets input elements like radio and checkbox when they are checked. */
+   input:checked
+   {
+      outline: 2px solid red;
+   }
+    /* Applies to form elements that are disabled or enabled. */
+   input:disabled
+   {
+      color: gray;
+   }
    </style>
 </head>
 <body>
@@ -51,5 +61,9 @@ Style an element when it gets focus -->
     <p>hi i am chetan patel</p>
     <p>hi i am chetan patel</p>
  </div>
+  gender : male <input type="radio"><br>
+  hobby : cricket <input type="checkbox"><br>
+  name : <input type="text" value="chetan patel" disabled ><br>
+  age : <input type="text" ><br>
 </body>
 </html>
