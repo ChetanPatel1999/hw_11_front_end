@@ -1,0 +1,81 @@
+<!-- 
+Flex Properties
+ for Flex Item
+
+ align-self : alignment of individual along the cross axis. 
+
+ flex-grow : how much a flex item will grow relative to the rest of the flex items if
+ space is available
+
+ flex-shrink  :  how much a flex item will shrink relative to the rest of the flex items if
+ space is availabl
+
+-->
+<!-- 
+ Qs:
+ Create a navbar with 4 options in the form of anchor tags inside list items.
+ Now, use flexbox to place them all spaced equally in a single line.
+ 
+ Use flexbox to center one div inside another div.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+        }
+
+        .container {
+            width: 800px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content:center;
+            align-items:center;
+            align-content: space-between;
+            
+        }
+
+        #box1 {
+            background-color: orange;
+            /* flex-shrink: 2; */
+            flex-grow: 2;
+        }
+
+        #box2 {
+            background-color: yellow;
+            /* align-self: flex-end; */
+        }
+
+        #box3 {
+            background-color: aqua;
+        }
+
+        #box4 {
+            background-color: blueviolet;
+            /* align-self: flex-end; */
+            flex-grow: 4;
+        }
+
+        #box5 {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div>
+</body>
+
+</html>
