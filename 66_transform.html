@@ -1,0 +1,62 @@
+<!-- 
+CSS Transform
+ Used to apply 2D & 3D transformations to an element
+
+ rotate
+ transform: rotate(45deg);
+
+ CSS Transform
+ scale
+ transform: scale(2);
+ transform: scale(0.5);
+ transform: scale(1, 2);
+ transform: scaleX(0.5);
+ transform: scaleY(0.5)
+
+ CSS Transform
+ translate
+ transform: translate(20px);
+ transform: translate(20px, 50px);
+ transform: translateX(20px);
+ transform: translateY(20px);
+
+ CSS Transform
+ skew
+ transform: skew (30deg);
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color:white;
+            position: absolute;
+            top:100px;
+            left: 300px;
+            transition: all 2s steps(5);
+            /* transform: rotate(45deg); */
+        }
+        div:hover{
+            /* transform: scale(2); */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(3); */
+            /* transform: scale(3,2); */
+            /* transform: rotate(360deg); */
+            /* transform: skew(90deg); */
+            /* transform: translateX(200px); */
+            /* transform: translateX(-200px); */
+            /* transform: translateY(-200px); */
+            transform: translateY(200px);
+        }
+
+    </style>
+ </head>
+ <body>
+    <div>
+        this is box
+    </div>
+ </body>
+ </html>
