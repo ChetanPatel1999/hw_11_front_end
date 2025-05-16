@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        function add() {
+            let a, b, c;
+            a = Number(document.getElementById("num1").value);
+            b = Number(document.getElementById("num2").value);
+            c = a + b;
+            document.getElementById("res").innerHTML = "sum = " + c;
+        }
+    </script>
+    <style>
+        * {
+            font-family: cursive;
+            font-size: 30px;
+        }
+
+        div {
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+            position: absolute;
+            top: 80px;
+            left: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgb(79, 79, 226);
+            border-radius: 20px;
+        }
+
+        p {
+            color: red;
+            text-align: center;
+            background-color: rgb(135, 222, 171);
+            border-radius: 20px;
+        }
+
+        input {
+            text-align: center;
+            border-radius: 20px;
+            color: red;
+        }
+
+        input::placeholder {
+            color: red;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            color: white;
+            background-color: red;
+            border-radius: 20px;
+        }
+        body{
+            background-color: rgb(173, 94, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Calculator</h3>
+        <input placeholder="enter frist num" id="num1">
+        <input placeholder="enter second num" id="num2">
+        <button onclick="add()">add</button>
+        <p id="res">result display here...</p>
+    </div>
+</body>
+
+</html>
