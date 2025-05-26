@@ -1,0 +1,52 @@
+<!-- <script>
+    //wap to count digit in given number.
+    let num = 2458
+    let c = 0
+    while (num) {
+        c++;
+        num = parseInt(num / 10);
+    }
+    console.log("count of individul digit : " + c)
+</script> -->
+<!-- <script>
+    //wap to print sum of individual digit og given number.
+    let num = 265, r;
+    let c = 0
+    while (num) {
+        r = num % 10;
+        c = c + r;
+        num = parseInt(num / 10);
+    }
+    console.log(c)
+</script> -->
+<!-- <script>
+    //wap to check given digit is in given number or not if apper so
+    // how many time appear.
+    let num = 26525, search = 6, r;
+    let c = 0
+    while (num) {
+        r = num % 10;
+        if (r == search) {
+            c++
+        }
+        num = parseInt(num / 10);
+    }
+    if (c == 0) {
+        console.log("digit is not found in number");
+    }
+    else {
+        console.log(search + "  " + c + " times found in number");
+    }
+</script> -->
+<script>
+    //wap to convert decimal number into binary number.
+    let num = Number(prompt("enter a num : ")), r;
+    let c = 0, i = 0;
+    while (num) {
+        r = num % 2;
+        c = c + r * 10 ** i;
+        num = parseInt(num / 2);
+        i++;
+    }
+    console.log(c)
+</script>
