@@ -101,7 +101,7 @@
         console.log(col)
     }   
 </script> -->
-<script>
+<!-- <script>
     let i, j, col, row = "";
     for (i = 1; i <= 5; i++) //2
     {
@@ -117,4 +117,17 @@
         }
         console.log(col)
     }   
+</script> -->
+<script>
+    let i, j, col,row="";
+    for (i = 65; i <= 69; i++) //2
+    {
+        col = ""
+        for (j = 65; j <= 69; j++) //j =1
+        {
+          col=col+String.fromCharCode(j)+" "
+        }
+        row=row+col+"\n"
+    }  
+    console.log(row) 
 </script>
