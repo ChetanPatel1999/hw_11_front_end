@@ -1,0 +1,54 @@
+<!-- <script>
+    let i, j;
+    lab1:
+    for (i = 1; i <= 5; i++) 
+    {
+        lab2:
+        for (j = 1; j <= 5; j++) 
+        {
+            if (j == 3) {
+                break lab1;
+            }
+            document.write(i, " ")
+        }
+        document.write("<br>")
+    }
+</script> -->
+<!-- <script>
+    let i, j;
+    lab1:
+    for (i = 1; i <= 5; i++) //6
+    {
+        lab2:
+        for (j = 1; j <= 5; j++) //3
+        {
+            if (j == 3) {
+                continue lab1;
+            }
+            document.write(j, " ")
+        }
+        document.write("<br>")
+    }
+</script> -->
+<script>
+    //wap to display 3 time appear frist character from given string.
+    let s = "xyzababacdbb"
+    let i, j, c, f = 0, ans;
+    lab1:
+    for (i = 0; i < s.length; i++) //3
+    {
+        c = 0
+        for (j = i; j < s.length; j++)//5
+        {
+            if (s[i] == s[j]) {
+                c++;//3
+            }
+            if (c == 3) {
+                ans = s[i];
+                break lab1;
+            }
+        }
+
+    }
+    console.log(ans)
+</script>
