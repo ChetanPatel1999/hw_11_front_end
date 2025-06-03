@@ -1,0 +1,50 @@
+<!-- <script>
+    //string is immutable/unchangeble in java script.
+    let name="chetan";
+    console.log(name);//chetan
+    name[0]='p';
+    console.log(name);//chetan
+</script> -->
+<!-- <script>
+    //wap to replace c with f in given string.
+    let name = "chectanc";
+    let newstr = "";
+    console.log(name);//chetan
+    for (let i = 0; i < name.length; i++)//2 
+    {
+        if (name[i] == 'c') {
+            newstr = newstr + 'f'; // "f"
+        }
+        else {
+            newstr = newstr + name[i];//"fhe"
+        }
+    }
+    console.log(newstr);//chetan
+</script> -->
+<!-- <script>
+    //wap to reverse string.
+    let name = prompt("enter string : ");
+    let newstr = "";
+    console.log(name);//chetan
+    for (let i = name.length-1; i >=0; i--)//2 
+    {
+        newstr=newstr+name[i];
+    }
+    console.log(newstr);//chetan
+</script> -->
+<script>
+    //wap to convert string in uppercase.
+    let name = prompt("enter string : ");
+    let newstr = "";
+    console.log(name);//chetan
+    for (let i = 0; i < name.length; i++)//2 
+    {
+        if (name[i].charCodeAt() >= 97 && name[i].charCodeAt() <= 122) {
+            newstr = newstr + String.fromCharCode(name[i].charCodeAt() - 32)
+        }
+        else {
+            newstr = newstr + name[i];
+        }
+    }
+    console.log(newstr);//chetan
+</script>
