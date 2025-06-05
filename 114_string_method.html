@@ -2,12 +2,41 @@
 some built in methods and propertice of string 
 str.length  :- this property return string length
 str.toUpperCase() :- its return uppercase string
-
+name.toLowerCase() :- its convert string in lower case
+name.includes("iam"):- its return true if "iam" in name otherwise return false
+name.startsWith("mr.") :- its return true if name start with "mr." otherwise false
+gmail.endsWith("@gmail.com") :- its return true if gmail end "@gmail.com"  other wise fasle
+str.search("isp") :- its return index of "isp" if "isp" in string otherwise return -1
+str.match("is") :- its return "is" if "is" in find string other wise null.
+str.match(/name/g):-  its return multple word if word inside string otherwise null.
+str.matchAll("is");// its return object array["is","is","is"]  other wise null
+str.indexOf("is"):- its return index of frist "is" otherwise -1
+str.lastIndexOf("is"):- its return last index of "is"
+str.replace("is","are") :- its replace string
+str.replaceAll("is","are") // str.replace(/is/g,"are");:- its replace all "is" string with "are"
 -->
 <script>
-    let name = "chetan patel";
-    console.log(name)
-    let newstr = name.toUpperCase();
-    console.log(name)
-    console.log(newstr) 
+    let str = "my name is chetan is and is hi bro";
+    let ans=str.replace(/is/g,"are");
+    console.log(str);
+    console.log(ans);
 </script>
+<!-- <script>
+    // wap to cheak gmail end with @gmail.com or not.
+    let gmail = prompt("create your gmail: ");
+    if (gmail.endsWith("@gmail.com")) {
+        console.log("your gmail is created \n"+gmail)
+    }
+    else {
+        console.log("please use @gmail.com at the end of gmail");
+    }
+</script> -->
+<!-- <script>
+    let name = prompt("enter you name : ");
+    if (name.startsWith("mr.")) {
+        console.log("welcome " + name)
+    }
+    else {
+        console.log("please start name with mr.");
+    }
+</script> -->
