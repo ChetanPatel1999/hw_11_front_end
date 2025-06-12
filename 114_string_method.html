@@ -14,13 +14,81 @@ str.indexOf("is"):- its return index of frist "is" otherwise -1
 str.lastIndexOf("is"):- its return last index of "is"
 str.replace("is","are") :- its replace string
 str.replaceAll("is","are") // str.replace(/is/g,"are");:- its replace all "is" string with "are"
+str.trim():- its trim unwanted space left and right from string 
+str.charAt(4) :- its return char giev index
+str.charCodeAt(1) :- its return ascci code of given index char
+String.fromCharCode(65):- its return char from ascci code
+n.concat(" ").concat("patel"); // combine two string
+n.split(" "); // spilt string to pass element and return array type object
+n.repeat(5)// repeat string pass number times
+n.slice(2,6);//return 2 to 5 index element string
+n.substr(4,2); // extract sub string start 4 and 2 element extract
+n.substring(4,8); //extract sub string start 4 and end 7 index
 -->
 <script>
+    let str = "ram is a good boy";
+    let ans=str.substring(4,5);
+    console.log(ans)
+</script>
+<!-- <script>
+    let str = "ram is a good boy";
+    let ans=str.substr(4,4);
+    console.log(ans)
+</script> -->
+<!-- <script>
+    let str = "ram is a good boy";
+    let ans=str.slice(4,13);
+    console.log(ans)
+</script> -->
+<!-- <script>
+    let str = "ram";
+    let ans=str.concat(" ").repeat(10);
+    console.log(ans)
+</script> -->
+<!-- <script>
+    let str = "hi i am chetan patel";
+    let ans= str.split(" ")
+    console.log(ans) 
+</script> -->
+<!-- <script>
+    let name = "chetan";
+    let sname = "patel";
+    let ans = name.concat(" ").concat(sname)
+    console.log(ans)
+</script> -->
+<!-- <script>
+    let i;
+    for (i = 0; i <= 255; i++) {
+        let ans = String.fromCharCode(i);
+        console.log(ans +" = "+i)
+    }
+</script> -->
+<!-- <script>
+    let str = "chetan patel";
+    let res=""
+    for (i = 0; i < str.length; i++) {
+       res=res+str.charCodeAt(i)+" "
+    }
+    console.log(str)
+    console.log(res) 
+</script> -->
+<!-- <script>
+    let str="chetan patel";
+    let ans=str.charAt(4);
+    console.log(ans)
+</script> -->
+<!-- <script>
+    let str = "        chetan patel";
+    console.log(str);
+    let ans=str.trim();
+    console.log(ans);
+</script> -->
+<!-- <script>
     let str = "my name is chetan is and is hi bro";
-    let ans=str.replace(/is/g,"are");
+    let ans=str.replaceAll("is","are");
     console.log(str);
     console.log(ans);
-</script>
+</script> -->
 <!-- <script>
     // wap to cheak gmail end with @gmail.com or not.
     let gmail = prompt("create your gmail: ");
