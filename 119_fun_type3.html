@@ -1,0 +1,39 @@
+<script>
+    //with parameter with return value
+    function add(a, b) {
+        let c = a + b;
+        return c;
+    }
+
+    function cube(num) {
+        return (num * num * num);
+    }
+
+
+    function factorial(num) {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+    function vovel_find(s)// chetan
+    {
+        let vovel = ""
+        for (let char of s) {
+            if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+                vovel = vovel + char;
+            }
+        }
+        return vovel;
+    }
+
+    // function calling
+
+    console.log(cube(4))
+
+    let res = add(12, 4);
+    console.log(res)
+
+    console.log(add(45, 5));
+</script>

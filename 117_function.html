@@ -1,0 +1,41 @@
+<!-- 
+ function in java script
+-->
+<script>
+    function add() {
+        let a = Number(prompt("enter a num1 : "))
+        let b = Number(prompt("enter a num2 : "))
+        let c;
+        c = a + b;
+        console.log("sum of ", a, " and ", b, " = ", c);
+        //string literal, template literals
+        // `hi i am template literals`
+        // `sum of ${a} and ${b} = ${c}`
+        console.log(`sum of ${a} and ${b} = ${c}`);
+    }
+    function sub() {
+        let a = Number(prompt("enter a num1 : "))
+        let b = Number(prompt("enter a num2 : "))
+        let c;
+        c = a - b;
+        console.log(`sub of ${a} and ${b} = ${c}`);
+    }
+    function evenOdd() {
+        let num = 45;
+        if (num % 2 == 0) {
+            console.log("even num")
+        }
+        else {
+            console.log("odd num")
+        }
+    }
+    //function calling
+
+    // evenOdd();
+    // add();
+    // add();
+
+    // for (let i = 1; i <= 5; i++) {
+    //     sub();
+    // }
+</script>

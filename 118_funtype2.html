@@ -1,0 +1,28 @@
+<script>
+    // with parameter but no return value
+
+    function add(a, b) {
+        let c;
+        c = a + b;
+        console.log(`sum of ${a} and ${b} = ${c}`);
+    }
+
+    function cube(num) {
+        let res;
+        res = num * num * num;
+        console.log(`cube of ${num} = ${res}`)
+    }
+
+    function factorial(num) {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        console.log(`factorial of ${num} = ${fact}`)
+    }
+    //function calling
+    cube(4);
+    add(12, 5);
+    add(17, 14);
+    add(6, 8);
+</script>
