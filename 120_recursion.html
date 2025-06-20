@@ -1,0 +1,157 @@
+<!-- 
+recursion : - when a function call itself is called recursion.
+-->
+<!-- <script>
+    // its run infinite time
+    function fun() {
+        console.log("hello world institute");
+        fun(); // recursive calling
+    }
+    //function calling
+    fun();
+</script> -->
+
+<!-- <script>
+    // wap to print a msg 5 times using recursion.
+    let i = 1;
+    function msg() {
+        console.log("hello world institute");//5
+        i++;//6
+        if (i <= 5) {
+            msg();
+        }
+    }
+
+    //function calling
+    msg();
+</script> -->
+
+<!-- <script>
+    // wap to print a 1 to 10 number using recursion.
+    let i = 1;
+    function msg() {
+        console.log(i);//2
+        i++;//3
+        if (i <= 10) {
+            msg();
+        }
+    }
+
+    //function calling
+    msg();
+</script> -->
+
+<!-- <script>
+    // wap to print a 1 to 10 even number using recursion.
+    let i = 1;
+    function msg() {
+        if (i % 2 == 0) {
+            console.log(i); //2 4 6 8 10
+        }
+        i++;//4
+        if (i <= 10) {
+            msg();
+        }
+    }
+
+    //function calling
+    msg();
+</script> -->
+
+<!-- <script>
+    // wap to print table of given number.
+    let i = 1;
+    function table(n) {
+        console.log(n * i);
+        i++;//11
+        if (i <= 10) {
+            table(n);
+        }
+    }
+
+    //function calling
+    table(8);
+</script> -->
+
+
+<!-- <script>
+    // wap to print reverse given range number.
+    function number(n, s) {
+        console.log(n); // 10 9 8 7 ... 2 1
+        if (n > s) {
+            number(n - 1, s);
+        }
+
+    }
+
+    // function calling
+    number(10, 5);
+
+    number(50, 40);
+</script> -->
+
+
+<!-- <script>
+    // wap to print  1 to 10 number .
+    function number(n) {
+        if (n > 1) {
+            number(n - 1);
+        }
+        console.log(n);
+    }
+
+    // function calling
+    number(10)
+</script> -->
+<!-- <script>
+    // wap to print  a msg 5 times .
+    function number(n) {
+
+        if (n > 1) {
+            number(n - 1);
+        }
+        console.log("hello world institue");
+    }
+
+    // function calling
+    number(5)
+</script> -->
+
+<!-- <script>
+    // wap to print  even number 1 to 10 .
+    function number(n) {
+        if (n > 1) {
+            number(n - 1);
+        }
+        if (n % 2 == 0) {
+            console.log(n);
+        }
+    }
+    // function calling
+    number(10)
+</script> -->
+
+<!-- <script>
+// wap to find factorial of given number uisng recursion.
+    function factorial(num) {
+        if (num == 0) {
+            return 1;
+        }
+        return num * factorial(num - 1);
+    }
+
+    console.log( factorial(4) )
+</script> -->
+
+
+<script>
+    //guess the output  of function
+    function fun(num) {
+        if (num == 1) {
+            return 1;
+        }
+        return num + fun(num - 1);
+    }
+
+    console.log(fun(10))
+</script>
