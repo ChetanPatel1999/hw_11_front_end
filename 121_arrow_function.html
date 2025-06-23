@@ -1,0 +1,60 @@
+<!-- 
+example of arrow function 
+
+const variable_name = (parameter)=> {
+         // code
+}
+-->
+<script>
+    // function add(a, b) {
+    //     let c;
+    //     c = a + b;
+    //     return c;
+    // }
+    // arrow function for add
+
+    const add = (a, b) => a + b;
+
+    // arrow function for cube  print
+    const cube = num => num * num * num;
+
+    const print = val => console.log(val)
+
+    const hello = () => console.log("hello students");
+
+    // warite a prgram to find greatest num betweeb two number
+    const greatest = (a, b) => a > b ? a : b;
+
+    // factorial arrow function
+    const factorial = num => {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    let res = add(12, 10);
+    console.log(res)
+
+    console.log(cube(4));
+
+    print("hello world institute")
+
+    print("my name is chetan")
+    let a = 89;
+    print("value of a = " + a)
+
+    hello();
+
+    console.log("greatest num = ", greatest(45, 78));
+
+    let ans = factorial(5);
+    console.log("factorial of 5  = ", ans);
+
+
+    const even_odd = num => num % 2 == 0 ? "even" : "odd";
+
+    console.log(even_odd(55));
+
+</script>
