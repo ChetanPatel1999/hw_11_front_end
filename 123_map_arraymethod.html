@@ -1,0 +1,28 @@
+<!-- 
+  map method of array :-
+  map method :- its done some operation on array value and 
+                return new array. 
+-->
+<script>
+    let arr = [1, 2, 3, 4, 5];
+
+    let squarearr = arr.map(val => val * val);
+
+    let cubearr = arr.map(val => val * val * val);
+
+    let newarr = arr.map(val => val + 5);
+
+    let newarr3 = arr.map(val => val + val);
+
+    console.log(arr)
+    console.log(squarearr)
+    console.log(cubearr)
+    console.log(newarr)
+
+    let newarr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        newarr2.push(arr[i] + 10);
+    }
+    console.log(newarr2);
+
+</script>

@@ -1,0 +1,41 @@
+<!-- 
+array forEach method :- 
+ forEach method :- its call a function for array each value , 
+                 which function  pass as paramter inside forEach method. 
+
+ arr=[12,34,56,78];
+ 
+ arr.forEach(callback function);
+
+ callback function :- when we pass a function inside other function 
+                       as a paramter is called callback function.
+                   
+-->
+
+<script>
+
+    let arr = [2, 4, 5, 8, 9]
+
+    // arr.forEach(function disp(val) {
+    //     console.log(val*val)
+    // })
+    arr.forEach(val => console.log(val))
+
+    arr.forEach((val,ind) => console.log(val," ",ind))
+
+    arr.forEach((val,ind,arrvalues) => console.log(val," ",ind," ",arrvalues))
+
+    console.log("dispal array element square : ")
+    arr.forEach(val => console.log(val * val))
+
+    console.log("display array element cube : ")
+    arr.forEach(val => console.log(val * val * val))
+
+    console.log("display array element with add 5 each element : ")
+    arr.forEach(val => console.log(val + 5))
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i] + 5);
+    }
+
+</script>
