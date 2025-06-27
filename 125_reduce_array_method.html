@@ -1,0 +1,29 @@
+<!-- 
+ reduce :- its done some operation on array and return only single value.
+
+-->
+
+<script>
+    let arr = [1, 2, 3, 4, 5]
+
+    let even_sum = arr.filter(num => num % 2 == 0).reduce((val, res) => res + val);
+
+    console.log(even_sum)
+    //find multiplication of all array element
+
+    let mul = arr.reduce((val, res) => res * val)
+
+    console.log(mul)
+    // finad max value from array 
+
+    let max = arr.reduce((val, res) => (val > res) ? val : res);
+
+    console.log(max)
+    let sum = arr.reduce((val, res) => res + val);
+
+    //get square sum of all element from array
+    let squaresum = arr.map(val => val * val).reduce((val, res) => res + val);
+    console.log(sum)
+    console.log(squaresum)
+
+</script>

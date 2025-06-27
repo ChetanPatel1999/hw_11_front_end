@@ -1,0 +1,47 @@
+<!-- 
+array methods :-
+filter method :- its also return new array but new array have only some filter values.
+
+-->
+
+<!-- <script>
+    let arr = [2, -7, - 6, 8, 9];
+    let evenarr = arr.filter(val => val % 2 == 0)
+
+    let above_5 = arr.filter(val => val > 6);
+    console.log(arr)
+
+    let pos = arr.filter(val => val > 0);
+    console.log(arr)
+
+    console.log(evenarr)
+
+    console.log(above_5)
+
+    console.log(pos)
+</script> -->
+
+<script>
+    let arr = [34, 7, 12, 17, 23]
+    let multiple_3 = arr.filter(num => num % 3 == 0);
+
+    let square = (arr.filter(num => num % 3 == 0)).map(val => val * val)
+
+    let ans = arr.filter(val => val > 10 && val < 50);
+
+    let prime = arr.filter(val => {
+        for (let i = 2; i < val; i++) {
+            if (val % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    });
+
+    console.log(arr)
+    console.log(prime)
+    console.log(ans)
+
+    console.log(multiple_3)
+    console.log(square)
+</script>
