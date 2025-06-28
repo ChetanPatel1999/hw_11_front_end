@@ -1,0 +1,87 @@
+<!-- 
+Window object :- 
+The window object represents an open window in a browser. It is browser’s object (not JavaScript’s)
+& is automatically created by browser.
+It is a global object with lots of properties & methods.
+window.alert()
+window.console.log() 
+
+console.log(window) ;// print window object in detail with propertice or method
+
+
+document object is a part of window 
+window --- document object
+
+we can access all html element in javascript because html code convert in document object and document 
+object is available inisde javascript
+
+What is DOM?
+
+When a web page is loaded, the browser creates a Document Object Model (DOM) of the page.
+
+window ---document
+document---- html
+html--- head
+html ---body
+head--- meta , title, link
+body --- div , script
+div --- image ,h1, p , button
+
+above all keyword is consider as a object and make a tree so in tree all node are object so we can say
+that that tree which make by object is  Document object model.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom example </title>
+    <style>
+        #myid {
+            background-color: blue;
+            color: white;
+        }
+
+        p {
+            color: red;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:blue">hello world institue</h1>
+    <h3 id="myid">DOM example by chetan</h3>
+    <p>dom stands for document object model</p>
+    <div>
+        <h2>fruits name </h2>
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+        </ul>
+    </div>
+    <button>click me!</button>
+    <script>
+        console.log(window.document); // its print document object means html  document
+        console.dir(window.document); // its print all propertice and methods of document object
+
+        console.log(window.document.body); // its print body object means body html code
+        console.dir(window.document.body); // its print all propertice and methods of body object
+
+        console.log(window.document.head); // its print head object means head html code
+        console.dir(window.document.head); // its print all propertice and methods of head object
+
+
+        console.log(document.body.childNodes[1]); // its print body sub tag which is 1 index 
+        console.dir(document.body.childNodes[1]); // its print body sub tag object propertice and methods
+
+        document.body.style.backgroundColor = "red"; // its change body background color
+        document.body.childNodes[1].innerText = "hello"; // change text of h1 tag using html
+        document.body.childNodes[1].style.backgroundColor = "red" // change h1 tag background color
+        // mean using DOM we can perform dynamically changes on webpages.
+    </script>
+</body>
+
+</html>
