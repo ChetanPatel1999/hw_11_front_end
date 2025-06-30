@@ -1,0 +1,114 @@
+<!-- 
+ DOM Manipulation :- change dynamically in DOM
+
+ Selecting with id
+ document.getElementById(“myId”) 
+
+ Selecting with class
+ document.getElementsByClassName(“myClass”)
+
+ Selecting with tag
+ document.getElementsByTagName(“p”)
+
+
+ DOM Manipulation
+
+ Query Selector :- its best from above selctor because its work for all.
+ document.querySelector(“#myId / .myClass / tag”)
+ //returns first element
+
+ document.querySelectorAll(“#myId / .myClass / tag”)
+ //returns a NodeList
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-color: darkslategray;" >
+    <h1 id="head1" class="heading">hello world institute</h1>
+    <h3 id="head3" class="heading">learn programming</h3>
+    <div id="container">
+        <h4 class="heading">course detail:-</h4>
+        <ul>
+            <li id="myid">C/C++</li>
+            <li>python</li>
+            <li class="heading">java</li>
+        </ul>
+    </div>
+    <p id="para">for more info visit hello world institute</p>
+    <h1>location :- Tower Sqaure</h1>
+    <script>
+        //  Selecting with id
+        //  document.getElementById(“myId”)
+
+        // let ele1 = document.getElementById("head1");
+        // console.log(ele1);
+        // let ele2 = document.getElementById("myid");
+        // console.log(ele2);
+
+        //         Selecting with class
+        //  document.getElementsByClassName(“myClass”)
+
+        // let ele1 = document.getElementsByClassName("heading");
+        // console.log(ele1);
+        // // for (ele of ele1) {
+        // //     console.log(ele);
+        // // }
+        // for (let i = 0; i < ele1.length; i++) {
+        //     console.log(ele1[i]);
+        // }
+
+
+        //  Selecting with tag
+        //  document.getElementsByTagName(“p”)
+        // let ele1 = document.getElementsByTagName("h1");
+        // console.log(ele1);
+        // console.log(ele1[0]);
+        // console.log(ele1[1]);
+
+        // let ele2 = document.getElementsByTagName("div");
+        // console.log(ele2[0])
+
+
+
+        //          DOM Manipulation
+
+        //  Query Selector :- its best from above selctor because its work for all.
+        //  document.querySelector(“#myId / .myClass / tag”)
+        //  //returns first element
+
+        //  document.querySelectorAll(“#myId / .myClass / tag”)
+        //  //returns a NodeList
+
+
+        // let ele1 = document.querySelector("h1");
+        // console.log(ele1);
+
+        // let ele1 = document.querySelectorAll("h1");
+        // console.log(ele1[0]);
+        // console.log(ele1[1]);
+
+        // let ele1 = document.querySelector("#container");
+        // console.log(ele1);
+
+        // let ele1 = document.querySelector(".heading");
+        // console.log(ele1);
+
+        let ele1 = document.querySelectorAll(".heading");
+        console.log(ele1);
+
+    </script>
+</body>
+
+</html>
