@@ -1,0 +1,53 @@
+<!-- 
+
+ DOM Manipulation :-
+
+ Properties :-  using this properties we can get / change / update dom element value/data.
+
+ tagName : returns tag for element nodes
+ innerText : returns the text content of the element and all its children
+ explaine children termlogy using perant child concept fristchild / last child / middle child
+ innerHTML : returns the plain text or HTML contents in the element
+ textContent : returns textual content even for hidden elements
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head" style="visibility: hidden;"> hello world institute</h1>
+    <div class="myclass">
+        this is div
+        <h3>course details</h3>
+        <ul>
+            <li id="myli">C++</li>
+            <li>html</li>
+            <li>java</li>
+        </ul>
+    </div>
+    <p>visit hello world institute for more details</p>
+    <script>
+        let heading = document.querySelector("#head");
+        //console.log(heading.tagName)
+        // console.log(heading.innerText);
+        // heading.innerText = "HW choching classes";
+        // console.log(heading.innerText);
+
+        let div = document.querySelector(".myclass")
+        //console.log(div.tagName)
+        // console.log(div.innerText);
+        // div.innerText="hello student"
+        // console.log(div.innerHTML);
+        // div.innerHTML = "<div style='color:red;'>hello student</div>"
+
+        let li = document.querySelector("#myli");
+        // li.innerText="python";
+    </script>
+</body>
+
+</html>
