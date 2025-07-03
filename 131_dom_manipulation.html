@@ -1,0 +1,49 @@
+<!-- 
+DOM Manipulation
+ Attributes
+ getAttribute( attr ) //to get the attribute value
+ setAttribute( attr, value ) //to set the attribute value
+
+ Style :- to change style of any html element using javascript
+
+ node.style
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: blue;
+            color: white;
+            font-family: cursive;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:red" class="myclass" title="hello">hello world institute</h1>
+    <script>
+        let ele = document.querySelector(".myclass");
+        //  console.log(ele.getAttribute("style"))
+        //  console.log(ele.getAttribute("class"))
+        //  console.log(ele.getAttribute("title"))
+
+        ele.setAttribute("class", "head");
+        ele.setAttribute("style", "color:white");
+        ele.setAttribute("title", "this is heading");
+
+        // Style :- to change style of any html element using javascript
+        ele.style.backgroundColor="red"
+        ele.style.letterSpacing="50px"
+        ele.style.fontSize="100px"
+    </script>
+</body>
+
+</html>
