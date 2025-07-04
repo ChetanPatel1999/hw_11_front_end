@@ -1,0 +1,61 @@
+<!-- 
+DOM Manipulation
+ Insert Elements
+ let el = document.createElement(“div“)
+ node.append( el ) //adds at the end of node (inside)
+ node.prepend( el ) //adds at the start of node (inside)
+ node.before( el ) //adds before the node (outside)
+ node.after( el ) //adds after the node (outside) 
+
+  Delete Element
+ node.remove( ) //removes the node
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading">hello world institute</h1>
+    <div class="box" style="border: 1px solid black;">
+        <h3>course details...</h3>
+        <ul>
+            <li>c/c++</li>
+            <li>python</li>
+            <li>java</li>
+        </ul>
+    </div>
+    <p>visit hello world institute for more details</p>
+    <script>
+        //create new element 
+        let ele = document.createElement("button");
+        ele.innerText = "click me!";
+        ele.style.color = "red"
+
+        let div = document.querySelector(".box");
+        // insert element in div tag at the last but inside
+        // div.append(ele);
+        // insert element in div tag as frist tag but inside
+        // div.prepend(ele);
+        //insert before div tag
+        // div.before(ele);
+        //insert after div tag
+        div.after(ele);
+        let para = document.querySelector("p");
+        para.after(ele)
+
+        // remove method is used to remove element
+
+        // ele.remove();
+        //  div.remove();
+
+        
+
+    </script>
+</body>
+
+</html>

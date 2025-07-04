@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div style="width: 100px;
+            height: 100px;
+           background-color: red;">
+
+    </div>
+    <button onclick="width()">width</button>
+    <button onclick="height()">height</button>
+    <button onclick="color()">color</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="show()">show</button>
+    <!-- <button onclick="color()">color</button> -->
+    <script>
+        function width() {
+            let div = document.querySelector("div")
+            div.style.width = Number(div.style.width.slice(0, -2)) + 10 + "px"
+        }
+
+        function height() {
+            let div = document.querySelector("div")
+            div.style.height = Number(div.style.height.slice(0, -2)) + 10 + "px"
+        }
+        let index = 0;
+        function color() {
+            let div = document.querySelector("div");
+            let colors = ["blue", "pink", "orange", "purple", "black"]
+            div.style.backgroundColor = colors[index];
+            index++;
+            if (index == 5) {
+                index = 0;
+            }
+        }
+        function hide() {
+            let div = document.querySelector("div");
+            div.style.visibility = "hidden";
+        }
+        function show() {
+            let div = document.querySelector("div");
+            div.style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>
