@@ -1,0 +1,51 @@
+<!-- 
+Events in JS
+ The change in the state of an object is known as an Event
+ Events are fired to notify code of "interesting changes" that may affect code execution.
+
+ event handling :- when we perform some task when event fire so this process is called event handling.
+
+
+ Mouse events (click, double click etc.)
+ Keyboard events (keypress, keyup, keydown)
+ Form events (submit etc.)
+ Print event & many more 
+
+ Event Handling in JS
+ node.event = ( ) => {
+ //handle here
+ }
+ example
+ btn.onclick = ( ) => {
+ console.log(“btn was clicked”);
+ }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world institue</title>
+    <style>
+        #box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline event handling -->
+     <button ondblclick="console.log('double click') " onclick="console.log('helle js')" >click me !</button>
+     <div id="box" onmouseleave="console.log('mouse out on div')" onmouseover="console.log('mouse over on div')"></div>
+     <script>
+        //even handling
+        let div=document.querySelector("#box");
+        div.onmouseover = ()=>{
+            console.log("handle by js");
+        }
+     </script>
+</body>
+</html>

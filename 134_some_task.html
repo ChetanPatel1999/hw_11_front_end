@@ -1,4 +1,4 @@
- <!-- //some problems :-
+<!-- //some problems :-
 //  Qs1 . Create a new button element. Give it a text “click me”, background color of red & text color
 //  of white.
 //  Insert the button as the first element inside the body tag.
@@ -7,3 +7,44 @@
 //  Now create a new class in CSS and try to append this class to the <p> element.
 //  Did you notice, how you overwrite the class name when you add a new one?
 //  Solve this problem using classList. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            background-color: burlywood;
+        }
+        .newclass{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para" >hello this is paragraph</p>
+
+    <script>
+        let ele = document.createElement("button");
+        ele.innerText = "click me!";
+        ele.style.backgroundColor = "red";
+        ele.style.color = "white";
+        let body = document.querySelector("body");
+        body.prepend(ele);
+
+        let p = document.querySelector("p");
+        //we use add method with classlist object to append new class in element
+        p.classList.add("newclass");
+
+        //we can also remove class using remove method
+
+        p.classList.remove("para");
+
+    </script>
+</body>
+
+</html>
