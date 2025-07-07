@@ -1,0 +1,42 @@
+<!-- 
+Event Object
+ It is a special object that has details about the event.
+ All event handlers have access to the Event Object's properties and methods.
+ node.event = (e) => {
+ //handle here
+ }
+ e.target, e.type, e.clientX, e.clientY
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+    <script>
+        let div = document.querySelector("#box");
+        div.onmouseover = (evt) => {
+          //  console.log(evt);
+            console.log(evt.target);
+            console.log(evt.type);
+            console.log(evt.clientX,evt.clientY);
+            console.log("mouse over")
+        }
+    </script>
+</body>
+
+</html>

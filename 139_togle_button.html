@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            background-color: white;
+            color: black;
+        }
+
+        .dark {
+
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button>change mode</button>
+    <h1>hello world institute</h1>
+    <div>
+        <h3>course details..</h3>
+        <ul>
+            <li>python</li>
+            <li>java</li>
+            <li>HTML</li>
+        </ul>
+    </div>
+    <p>visit hello world institute for more details</p>
+    <script>
+        let btn = document.querySelector("button");
+        let body = document.querySelector("body");
+        let mode = "light";
+        btn.addEventListener("click", () => {
+            if (mode == "light") {
+                mode = "dark";
+                // body.style.backgroundColor = "black";
+                // body.style.color = "white";
+                body.classList.add("dark");
+                body.classList.remove("light");
+            }
+            else {
+                mode = "light";
+                // body.style.backgroundColor = "white";
+                // body.style.color = "black";
+                body.classList.add("light");
+                body.classList.remove("dark");
+            }
+            console.log(mode);
+        })
+    </script>
+</body>
+
+</html>
