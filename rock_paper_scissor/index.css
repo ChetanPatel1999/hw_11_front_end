@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header
+{
+    background-color: rgb(15, 15, 83);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 80px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+img:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+.score
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+}
+#user-score,#comp-score{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#result{
+    background-color:  rgb(15, 15, 83);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
