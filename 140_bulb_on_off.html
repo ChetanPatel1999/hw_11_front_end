@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myimg1 {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+        }
+        .main {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .btn {
+            display: flex;
+            gap: 30px;
+        }
+
+        button {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+        #btn1{
+            background-color: green;
+            color: white;
+        }
+        #btn2{
+            background-color: red;
+            color: white;
+        }
+        body{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="btn">
+            <button id="btn1">on</button>
+            <button id="btn2">off</button>
+        </div>
+        <div>
+            <img class="myimg1" src="light2off.jpg">
+        </div>
+    </div>
+    <script>
+        let img = document.querySelector("img");
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        btn1.addEventListener("click", () => {
+            img.setAttribute("src", "light1on.jpg");
+        })
+        btn2.addEventListener("click", () => {
+            img.setAttribute("src", "light2off.jpg");
+        })
+    </script>
+</body>
+
+</html>
