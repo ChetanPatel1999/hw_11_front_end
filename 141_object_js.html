@@ -1,0 +1,53 @@
+<!-- 
+ Class and Object :-
+
+Prototypes in JS
+ A javaScript object is an entity having state and behavior (properties and method).
+
+ JS objects have a special property called prototype.
+
+ We can set prototype using     _ _ proto _ _
+
+ *If object & prototype have same method,
+ object’s method will be used. 
+-->
+<script>
+    // const student = {
+    //     //properties
+    //     name: "chetan patel",
+    //     rno: 101,
+    //     per: 88.56,
+    //     // methods
+    //     stdDetail: function(){
+    //         console.log("student details : ")
+    //         console.log("student name : ",this.name)
+    //         console.log("student rno : ",this.rno)
+    //         console.log("student per : ",this.per)
+    //     },
+    //     whoAreYou()
+    //     {
+    //         console.log("i am student")
+    //     }
+    // }
+    // student.stdDetail();
+    // student.whoAreYou(); 
+
+    const hp = {
+        price: 50000,
+        powerOff() {
+            console.log("please shut down pc than poweroff");
+        }
+    }
+
+    const dell = {
+        price: 80000
+    }
+
+    const lenova={
+      price:25000,
+      
+    }
+    dell.__proto__ = hp
+    lenova.__proto__ = hp
+
+</script>

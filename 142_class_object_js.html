@@ -1,0 +1,21 @@
+<script>
+    class student {
+        setData(name, rno) {
+            this.name = name;
+            this.rno = rno;
+        }
+        dispStudent() {
+            console.log("student info :")
+            console.log("student name :", this.name)
+            console.log("student rno :", this.rno)
+            console.log("-----------------------------")
+        }
+    }
+    
+    let s1 = new student();
+    s1.setData("ram", 101)
+    s1.dispStudent();
+    let s2 = new student();
+    s2.setData("mohit", 102);
+    s2.dispStudent();
+</script>
