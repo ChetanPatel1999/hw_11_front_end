@@ -1,0 +1,17 @@
+<script>
+    // method overloding is not suported by js
+    // rest parameter in js  (...parameter)
+    function add(...a) {
+        let sum = 0;
+        for (let i of a) {
+            sum = sum + i;
+        }
+        console.log(" sum = ", sum);
+    }
+    add(12, 5); //17
+    add(12, 5, 8); //25
+    add(12, 5, 8, 10); //35
+    add(12.5, 5.2);//17.7
+    add(17);//17
+    add(3, 9, "home", "pen", 12, 10);
+</script>

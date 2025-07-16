@@ -1,0 +1,16 @@
+<script>
+    // method overriding :- 
+    class data {
+        display() {
+            console.log("data class display called");
+        }
+    }
+    class number extends data {
+        display() // override base class method
+        {
+            console.log("number class display called");
+        }
+    }
+    let n1 = new number();
+    n1.display();
+</script>
