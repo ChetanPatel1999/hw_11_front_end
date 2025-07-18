@@ -1,0 +1,40 @@
+<script>
+    //object array in js
+    class person {
+        static village = "bibikhedi";
+        static above60 = 0;
+        static belowe60 = 0;
+        static count = 0;
+        constructor() {
+            this.name = prompt("enter name :");
+            this.age = Number(prompt("enter age:"));
+            if (this.age > 60) {
+                person.above60++;
+            }
+            else {
+                person.belowe60++;
+            }
+        }
+        getPerson() {
+            console.log("person info : ", ++person.count)
+            console.log("person village : ", person.village)
+            console.log("person name : ", this.name)
+            console.log("person age : ", this.age)
+            console.log("-------------------------")
+        }
+        static getAbove60() {
+            console.log("above 60 persons : ", person.above60);
+            console.log("belowe 60 persons : ", person.belowe60);
+            console.log("-------------------------")
+        }
+    }
+    let persons = []
+    n = Number(prompt("enter number of person : "))
+    for (let i = 0; i < n; i++) {
+        persons.push(new person());
+    }
+    for (let person of persons) {
+        person.getPerson();
+    }
+    person.getAbove60();
+</script>

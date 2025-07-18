@@ -1,0 +1,41 @@
+<script>
+    //instance and class variable
+    class person {
+        static village = "bibikhedi";
+        static above60 = 0;
+        static belowe60 = 0;
+        static count = 0;
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+            if (age > 60) {
+                person.above60++;
+            }
+            else {
+                person.belowe60++;
+            }
+        }
+        getPerson() {
+            console.log("person info : ", ++person.count)
+            console.log("person village : ", person.village)
+            console.log("person name : ", this.name)
+            console.log("person age : ", this.age)
+            console.log("-------------------------")
+        }
+        static getAbove60() {
+            console.log("above 60 persons : ", person.above60);
+            console.log("belowe 60 persons : ", person.belowe60);
+            console.log("-------------------------")
+        }
+    }
+    let p1 = new person("shyam", 20);
+    let p2 = new person("ram", 70);
+    let p3 = new person("raj", 90);
+    let p4 = new person("rohit", 80);
+    p1.getPerson();
+    p2.getPerson();
+    p3.getPerson();
+    p4.getPerson();
+    person.getAbove60();
+    
+</script>

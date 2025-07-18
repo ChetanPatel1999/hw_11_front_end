@@ -1,21 +1,26 @@
 <script>
     class student {
-        setData(name, rno) {
+        setData(name, per) {
             this.name = name;
-            this.rno = rno;
+            this.per = per;
         }
         dispStudent() {
             console.log("student info :")
             console.log("student name :", this.name)
-            console.log("student rno :", this.rno)
+            console.log("student rno :", this.per)
             console.log("-----------------------------")
         }
+        static average(ob1, ob2) {
+            let ave = (ob1.per + ob2.per) / 2;
+            console.log(` average marks of  ${ob1.name} and ${ob2.name} = ${ave} `)
+        }
+
     }
-    
     let s1 = new student();
-    s1.setData("ram", 101)
+    s1.setData("ram", 70)
     s1.dispStudent();
     let s2 = new student();
-    s2.setData("mohit", 102);
+    s2.setData("mohit", 90);
     s2.dispStudent();
+    student.average(s1, s2);
 </script>
