@@ -1,0 +1,37 @@
+<!--
+  async await >> promise chains >> callback hell
+
+Sync in JS
+
+ Synchronous
+ Synchronous means the code runs in a particular sequence of instructions given in the program.
+ Each instruction waits for the previous instruction to complete its execution.
+
+ Asynchronous
+ Due to synchronous programming, sometimes imp instructions get
+ blocked due to some previous instructions, which causes a delay in the UI.
+ Asynchronous code execution allows to execute next instructions
+ immediately and doesn't block the flow. 
+ -->
+<!-- <script>
+    //synchronus prgramm
+    console.log("one")
+    console.log("two")
+    console.log("three")
+    console.log("four")
+ </script> -->
+
+<script>
+    //asynchronus prgramming
+    function getdata(id) {
+        setTimeout(() => {
+            console.log("data " + id)
+        }, 2000);
+    }
+
+    console.log("one")
+    getdata(101)
+    console.log("three");
+    console.log("four"); 
+    console.log("five"); 
+</script>

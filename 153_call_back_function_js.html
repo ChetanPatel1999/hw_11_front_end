@@ -1,0 +1,21 @@
+<!-- 
+ callback :- its is a function which pass as  a parameter inside other function.
+-->
+<script>
+    const add=(a, b)=> {
+        console.log(a + b);
+    }
+
+    function sub(a, b) {
+        console.log(a - b);
+    }
+
+    function calculator(a, b, clback) {
+        clback(a, b);
+    }
+
+    calculator(12, 5, (a, b) => {
+        console.log(a + b);
+    });
+    
+</script>
