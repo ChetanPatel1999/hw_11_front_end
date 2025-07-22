@@ -1,0 +1,49 @@
+<script>
+    // promise chain :-  
+    function getapi1() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data 1");
+                resolve("success");
+            }, 4000)
+        })
+    }
+
+    function getapi2() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data 2");
+                resolve("success");
+            }, 4000)
+        })
+    }
+
+    function getapi3() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data 3");
+                resolve("success");
+            }, 4000)
+        })
+    }
+
+    // let promise1 = getapi1();
+    // promise1.then((res) => {
+    //     let promise2 = getapi2();
+    //     promise2.then((res) => {
+    //         let promise3 = getapi3();
+    //         promise3.then((res) => {
+    //             console.log(res);
+    //         })
+    //     })
+    // })
+
+    getapi1().then((res) => {
+        getapi2().then((res) => {
+            getapi3().then((res) => {
+                console.log(res);
+            })
+        })
+    })
+
+</script>

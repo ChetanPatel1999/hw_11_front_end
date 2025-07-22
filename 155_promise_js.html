@@ -32,10 +32,31 @@ promise.then( ( res ) => { .... } )
 promise.catch( ( err ) ) => { .... } )
 
 -->
-<script>
+<!-- <script>
     let promise = new Promise((resolve, reject) => {
         console.log("i am promise");
-        //resolve("success");
-        reject("network error")
+        resolve("success");
+        // reject("network error")
     });
+</script> -->
+<script>
+    function getapi() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("some data");
+                // resolve("success");
+                reject("network error");
+            }, 4000)
+        })
+    }
+
+    let promise = getapi();
+    promise.then((res) => {
+        console.log(res);
+        console.log("data fetch succefully");
+    })
+    promise.catch((res) => {
+        console.log(res);
+        console.log("error in data fetching");
+    })
 </script>
