@@ -1,0 +1,66 @@
+<!-- 
+IIFE : Immediately Invoked Function Expression
+IIFE is a function that is called immediately as soon as it is defined.
+
+(function (){
+//code
+}
+)();
+ 
+( () => {
+//code
+}
+)();
+
+(async function (){
+//code
+}
+)();
+
+(async ()=>{
+//code
+}
+)();
+-->
+<script>
+    function getdata(id) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data ", id)
+                resolve("get data succesfully");
+            }, 4000)
+        })
+    }
+
+
+    (async function () {
+        console.log("data 1 is fatching...");
+        await getdata(1);
+        console.log("data 2 is fatching...");
+        await getdata(2);
+        console.log("data 3 is fatching...");
+        await getdata(3);
+        console.log("data 4 is fatching...");
+        await getdata(4);
+    })()
+
+    // console.log("data 1 is fatching...");
+    // getdata(1)
+    //     .then((res) => {
+    //         console.log("data 2 is fatching...");
+    //         return getdata(2)
+    //     })
+    //     .then((res) => {
+    //         console.log("data 3 is fatching...");
+    //         return getdata(3)
+    //     })
+    //     .then((res) => {
+    //         console.log("data 4 is fatching...");
+    //         return getdata(4)
+    //     })
+    //     .then((res) => {
+    //         console.log("data 5 is fatching...");
+    //         return getdata(5)
+    //     })
+
+</script>
