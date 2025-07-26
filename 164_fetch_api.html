@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fetch('https://mocki.io/v1/ca7d5292-66dc-4bbe-aa17-9514e884987e')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data[parseInt(Math.random()*100)].joke); // One Hindi joke
+
+            });
+    </script>
+</body>
+
+</html>

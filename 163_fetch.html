@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        h3{
+            margin-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img" src="">
+    <button id="btn">get random User</button>
+    <h3 id="name">show name</h3>
+    <script>
+        let url = "https://randomuser.me/api/";
+        let img = document.querySelector("#img");
+        let btn = document.querySelector("#btn");
+        let name = document.querySelector("#name");
+        const randomUser = () => {
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    data=data.results[0]
+                    console.log(data);
+                    console.log(data.picture.medium);
+                    img.setAttribute("src", data.picture.medium);
+                    name.innerText=data.name.title+" "+data.name.first+" "+data.name.last
+                })
+        }
+        btn.addEventListener("click", randomUser);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!-- 
+fetch api :- the fetch api provides an interface for fetching(sending / receving ) resorcecs.
+
+it used  request and response object .
+
+the fetch()  method  is used to fetch a resorce(data).
+
+let promise = fetch(url , [option])
+
+Understanding Terms :- 
+
+AJAX   is  Asynchronous JS & XML
+
+JSON is javascript Object Notation
+
+json() method :- returns a second promise that resolve with the result of parsing the 
+                 response body text as JSON(input is json output is JS object ) 
+
+Request & Response
+HTTP Verbs
+Response Status Code
+
+HTTP response headers also Contain details about the responses
+, such as content type , HTTP status code etc.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">get funny jokes</button>
+    <p id="para"></p>
+    <script>
+        let url = "https://official-joke-api.appspot.com/random_joke";
+        let para = document.querySelector("#para");
+        let btn = document.querySelector("#btn");
+        const getFunnyJokes = async () => {
+            let response = await fetch(url);
+            console.log(response);
+            let data = await response.json();
+            console.log(data);
+            console.log(data.setup);
+            console.log(data.punchline)
+            para.innerText = `${data.setup} \n ${data.punchline}`
+        }
+        btn.addEventListener("click",getFunnyJokes);
+    </script>
+</body>
+
+</html>

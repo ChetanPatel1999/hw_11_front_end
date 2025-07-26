@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img" src="">
+    <button id="btn">get dog image</button>
+    <script>
+        let url = "https://dog.ceo/api/breeds/image/random";
+        let img = document.querySelector("#img");
+        let btn = document.querySelector("#btn");
+        const getDogPic = () => {
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data.message);
+                    img.setAttribute("src", data.message);
+                })
+        }
+        btn.addEventListener("click", getDogPic);
+    </script>
+</body>
+
+</html>
