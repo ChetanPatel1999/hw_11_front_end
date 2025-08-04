@@ -31,16 +31,19 @@ button {
     border: none;
     outline: none;
 }
-.amount input{
+
+.amount input {
     height: 3rem;
     border: 1px solid lightgray;
     padding-left: .5rem;
     font-size: 1rem;
 }
-.select-container img{
+
+.select-container img {
     width: 2rem;
 }
-.select-container{
+
+.select-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,23 +53,26 @@ button {
     border-radius: .65rem;
     border: 1px solid lightgray;
 }
-.dropdown{
+
+.dropdown {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
 }
-.dropdown i{
+
+.dropdown i {
     font-size: 1.5rem;
     margin-top: 1.2rem;
 }
-.msg{
+
+.msg {
     margin-top: 2rem;
 }
-button{
+button {
     height: 3rem;
     background-color: darkmagenta;
     color: white;
     font-size: 1rem;
-    margin-top: 2rem;;
+    margin-top: 2rem;
 }
