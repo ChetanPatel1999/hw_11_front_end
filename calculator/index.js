@@ -15,6 +15,7 @@ buttons.forEach(button => {
             input.value = string
         }
         else if (val == 'DEL') {
+            string=string+""
             string = string.substring(0, string.length - 1);
             input.value = string
         }
