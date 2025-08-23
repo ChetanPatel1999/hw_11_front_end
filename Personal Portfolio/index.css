@@ -4,7 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #050404;
     color: white;
@@ -223,15 +225,17 @@ nav ul li a:hover::after {
 
 .my-work div img {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     border-radius: 10px;
     /* position: relative; */
+    display: block;
+    transition: transform 0.5s;
 }
 
 .layer {
     position: absolute;
     left: 0px;
-    bottom: -200px;
+    bottom:-200px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), red);
     width: 100%;
     height: 0%;
@@ -242,6 +246,8 @@ nav ul li a:hover::after {
     text-align: center;
     padding: 50px;
     transition: all 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .layer h3 {
@@ -270,4 +276,72 @@ nav ul li a:hover::after {
 .work:hover .layer {
     height: 100%;
     bottom: 0px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 14px 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: background 0.5s;
+}
+.btn:hover
+{
+    background-color: red;
+}
+
+/* -------------------contact section---------------- */
+.contact-left{
+/* border: 1px solid red; */
+flex-basis: 35%;
+}
+.contact-right{
+/* border: 1px solid red; */
+flex-basis: 60%;
+}
+.contact-left p{
+    margin: 30px 0px;
+}
+.contact-left p i{
+    color: red;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.social-media{
+    margin-top: 40px;
+}
+.social-media i{
+    font-size: 30px;
+    margin-right: 20px;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+.social-media i:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.btn2{
+    display: inline-block;
+    background-color: red;
+}
+.contact-right form {
+    width: 100%;
+}
+.contact-right form input,form textarea{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 15px 0px ;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    background-color: #262626;
+    border-radius: 10px;
+    color: white;
 }
