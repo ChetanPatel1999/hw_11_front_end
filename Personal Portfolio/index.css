@@ -4,9 +4,11 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #050404;
     color: white;
@@ -102,6 +104,10 @@ nav ul li a:hover::after {
 .about-col-2 {
     flex-basis: 65%;
     /* border: 1px solid red; */
+}
+
+.about-col-2 p {
+    margin-top: 20px;
 }
 
 .sub-title {
@@ -235,7 +241,7 @@ nav ul li a:hover::after {
 .layer {
     position: absolute;
     left: 0px;
-    bottom:-200px;
+    bottom: -200px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), red);
     width: 100%;
     height: 0%;
@@ -277,10 +283,12 @@ nav ul li a:hover::after {
     height: 100%;
     bottom: 0px;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.1);
 }
-.btn{
+
+.btn {
     text-decoration: none;
     color: white;
     display: block;
@@ -292,56 +300,92 @@ img:hover{
     font-size: 15px;
     transition: background 0.5s;
 }
-.btn:hover
-{
+
+.btn:hover {
     background-color: red;
 }
 
 /* -------------------contact section---------------- */
-.contact-left{
-/* border: 1px solid red; */
-flex-basis: 35%;
+.contact-left {
+    /* border: 1px solid red; */
+    flex-basis: 35%;
 }
-.contact-right{
-/* border: 1px solid red; */
-flex-basis: 60%;
+
+.contact-right {
+    /* border: 1px solid red; */
+    flex-basis: 60%;
 }
-.contact-left p{
+
+.contact-left p {
     margin: 30px 0px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: red;
     font-size: 25px;
     margin-right: 10px;
 }
-.social-media{
+
+.social-media {
     margin-top: 40px;
 }
-.social-media i{
+
+.social-media i {
     font-size: 30px;
     margin-right: 20px;
     color: #ababab;
     transition: transform 0.5s;
 }
-.social-media i:hover{
+
+.social-media i:hover {
     color: red;
     transform: translateY(-5px);
 }
-.btn2{
+
+.btn2 {
     display: inline-block;
     background-color: red;
 }
+
 .contact-right form {
     width: 100%;
 }
-.contact-right form input,form textarea{
+
+.contact-right form input,
+form textarea {
     width: 100%;
     margin: 15px 0px;
-    padding: 15px 0px ;
+    padding: 15px 0px;
     padding-left: 15px;
     outline: none;
     border: none;
     background-color: #262626;
     border-radius: 10px;
     color: white;
+    resize: none;
+}
+
+.btn3 {
+    font-size: 20px;
+    padding: 14px 60px;
+    margin-top: 10px;
+}
+
+.copyright {
+    background-color: #262626;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.copyright p {
+    font-weight: 600;
+}
+
+.copyright p i {
+    color: red;
+}
+
+.msg {
+    margin-top: -15px;
+    color:green
 }
