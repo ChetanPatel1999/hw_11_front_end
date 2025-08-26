@@ -387,5 +387,104 @@ form textarea {
 
 .msg {
     margin-top: -15px;
-    color:green
+    color: green
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/*-------------------------- media quairy ------------------------------*/
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(images/phonlogo.png);
+    }
+
+    nav .fa-solid {
+        display: block;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .text-header {
+        margin-top: 100%;
+        font-size: 20px;
+    }
+
+    .text-header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        background-color: red;
+        height: 100vh;
+        position: absolute;
+        top: -10px;
+        right: -200px;
+        width: 150px;
+        padding-top: 40px;
+        transition: right 0.5s;
+    }
+
+    nav ul .fa-xmark {
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav .fa-solid {
+        font-size: 25px;
+    }
+
+    .about-col-1 {
+        flex-basis: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .tab-titles p {
+        margin-right: 30px;
+    }
+
+    .contact-left {
+        flex-basis: 100%;
+    }
+
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .contact-right .btn2 {
+        display: block;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
 }

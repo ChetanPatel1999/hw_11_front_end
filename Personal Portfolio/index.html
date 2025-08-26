@@ -16,12 +16,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
+                <i id="open" class="fa-solid fa-bars"></i>
+                <ul id="myul">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Service</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i><i id="close" class="fa-solid fa-xmark"></i></i>
                 </ul>
             </nav>
             <div class="text-header">
@@ -205,6 +207,17 @@
                     form.reset();
                 })
                 .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        let open = document.querySelector("#open");
+        let close = document.querySelector("#close");
+        let myul = document.querySelector("#myul");
+        open.addEventListener("click", () => {
+            myul.style.right = "-50px"
+        })
+        close.addEventListener("click", () => {
+            myul.style.right = "-200px"
         })
     </script>
 </body>
