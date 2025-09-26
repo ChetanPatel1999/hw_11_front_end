@@ -1,0 +1,13 @@
+@media only screen and (min-width:255px) and (max-width:575px) {
+
+    .mobile-button {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        padding: 10px;
+    }
+
+    .header-img {
+        width: 100px;
+    }
+}

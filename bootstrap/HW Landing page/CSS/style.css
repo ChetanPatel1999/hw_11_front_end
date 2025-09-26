@@ -1,0 +1,12 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.header-img {
+    width: 80px;
+}
+
+.my-button {
+    color: white;
+    background: linear-gradient(to right, rgb(10, 206, 254), rgb(38, 153, 251));
+}
