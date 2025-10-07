@@ -10,3 +10,26 @@
     color: white;
     background: linear-gradient(to right, rgb(10, 206, 254), rgb(38, 153, 251));
 }
+
+.baner-content h1 {
+    font-size: 45px;
+}
+
+.baner-content p {
+    font-size: 20px;
+}
+
+.baner-content span {
+    color: #2699fb;
+}
+
+.baner-content ul li {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.baner-content ul li i {
+    color: #2699fb;
+    margin-right: 10px;
+}

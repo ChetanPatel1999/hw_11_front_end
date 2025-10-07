@@ -10,4 +10,12 @@
     .header-img {
         width: 100px;
     }
+
+    .baner-content h1 {
+        font-size: 30px;
+    }
+
+    .button-box button {
+        width: 100% !important;
+    }
 }
