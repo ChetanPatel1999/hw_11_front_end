@@ -33,10 +33,47 @@
     color: #2699fb;
     margin-right: 10px;
 }
-.baner-form h4{
+
+.baner-form h4 {
     font-size: 18px;
     font-weight: 700;
 }
-.baner-form p{
+
+.baner-form p {
     font-size: 16px;
+}
+
+.counter-section h3 {
+    font-weight: 700;
+    color: #2699fb;
+}
+
+.key-highlight {
+    background-color: #f0faff;
+}
+
+.key-highlight h2 {
+    color: #0a2134;
+}
+
+.key-highlight p {
+    font-size: 18px;
+}
+
+.key-highlight-item h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.key-highlight-item p {
+    font-size: 12px;
+}
+
+.key-highlight-item i {
+    font-size: 35px;
+    color: #2699fb;
+}
+.key-highlight-item
+{
+    background-color: white;
 }
