@@ -73,11 +73,28 @@
     font-size: 35px;
     color: #2699fb;
 }
-.key-highlight-item
-{
+
+.key-highlight-item {
     background-color: white;
 }
-.card-img-top
-{
+
+.card-img-top {
     height: 150px;
+}
+
+.certificate-section {
+    background-color: #f0faff;
+}
+
+.certificate-section img {
+    width: 100%;
+}
+
+.curriculum-section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.curriculum-section ul li i{
+    color: #2699fb;
+    margin-right: 10px;
 }
