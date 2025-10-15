@@ -94,7 +94,34 @@
     list-style: none;
     margin-bottom: 10px;
 }
-.curriculum-section ul li i{
+
+.curriculum-section ul li i {
     color: #2699fb;
     margin-right: 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(250, 250, 250);
+    color: black;
+    border-bottom: 2px solid #2699fb;
+    border-radius: 0;
+}
+
+.student-review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.student-review #para {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.box {
+    background: linear-gradient(to right, rgb(10, 206, 254), rgb(38, 153, 251));
+    padding: 50px;
+    color: white;
+    text-align: center;
 }
