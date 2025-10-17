@@ -125,3 +125,40 @@
     color: white;
     text-align: center;
 }
+
+.accordian-section {
+    background-color: #f0faff;
+}
+
+.accordian-section .accordion-item {
+    margin-bottom: 20px;
+}
+
+.company-section img {
+    width: 150px;
+}
+
+.company-section h3 {
+    color: #0a2134;
+}
+
+.footer-section {
+    background-color: #212529;
+    color: white;
+}
+
+.footer-section p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer-section i{
+    font-size: 20px;
+    margin-right: 10px;
+}
