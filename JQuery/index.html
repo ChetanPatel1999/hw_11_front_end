@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <button>click me!</button>
+    <p>text of paragraph 1</p>
+    <p id="para">text of paragraph 2</p>
+    <p class="my-class">text of paragraph 3</p>
+    <p class="my-class">text of paragraph 4</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script >
+        //  console.log(jQuery);
+        $("button").click(function () {
+
+            $(".my-class").css("font-size", "30px");
+        })
+    </script>
+</body>
+
+</html>
