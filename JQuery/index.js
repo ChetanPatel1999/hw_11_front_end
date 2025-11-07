@@ -132,11 +132,108 @@
 // slideDown()
 // slideUp()
 // slideToggle()
+// $(document).ready(function () {
+//     $("button").click(function () {
+//         // $(".box").slideUp(3000, () => {
+//         //     $(".box").slideDown(3000);
+//         // });
+//         $(".box").slideToggle(2000);
+//     });
+// });
+
+
+
+
+//jQuery Effects - Animation
+// $(document).ready(function () {
+//     // $("button").click(function () {
+//     //     $("div").animate({ left: '250px' }, 3000, () => {
+//     //         $("div").animate({ left: '0px' }, 3000, () => {
+//     //             console.log("animation complete")
+//     //         })
+//     //     });
+//     // });
+
+//     // $("button").click(function () {
+//     //     $("div").animate({
+//     //         left: '250px',
+//     //         opacity: '0.5',
+//     //         height: '300px',
+//     //         width: '300px'
+//     //     }, 3000, () => {
+//     //         $("div").animate({
+//     //             left: '0px',
+//     //             opacity: '1',
+//     //             height: '150px',
+//     //             width: '150px'
+//     //         }, 3000)
+//     //     });
+//     // });
+//     // $("button").click(function () {
+//     //     $("div").animate({
+//     //         height: '-=10px',
+//     //         width: '-=10px'
+//     //     });
+//     // });
+
+//     // $("button").click(function () {
+//     //     $("div").animate({
+//     //         height: 'toggle'
+//     //     });
+//     // });
+
+
+//     // $("button").click(function () {
+//     //     $("div").animate({ height: '300px' }, "slow");
+//     //     $("div").animate({ width: '300px' }, "slow");
+//     //     $("div").animate({ height: '100px' }, "slow");
+//     //     $("div").animate({ width: '100px' }, "slow");
+//     // });
+
+//     // $(".start").click(function () {
+//     //     $("div").animate({ left: '250px' }, 3000);
+//     //     $("div").animate({ fontSize: '80px' }, 3000);
+//     // });
+//     // $(".stop").click(function () {
+//     //     $("div").stop(false,true);
+//     // });
+
+
+
+// });
+
+
+
+
+// //jquery chaining
+// $(document).ready(function () {
+//     $(".start").click(function (e) {
+//         $("p").css("color", "red").fadeTo(2000,"0.5").slideUp(2000).slideDown(2000);
+//     });
+// });
+
+
+// Get Content - text(), html(), and val()
 $(document).ready(function () {
-    $("button").click(function () {
-        // $(".box").slideUp(3000, () => {
-        //     $(".box").slideDown(3000);
-        // });
-        $(".box").slideToggle(2000);
+    $(".start").click(function () {
+        // let text = $("div").text()   
+        // console.log(text)
+        // let text = $("div").html()
+        // console.log(text)
+        // let text = $("input").val()
+        // console.log(text)
+        // let text = $("a").attr("title")
+        // console.log(text)
+
+        // $("#para").text("hello brother");
+        // $("div").html("<b>hello brother<b>");
+
+        // let c = 12 + Number($("input").val());
+        // $("#para").text(`addition = ${c}`);
+        // $("input").val("set any value")
+
+        // $("a").attr("title","new title")
+        $("a").attr("class","new-class")
+
     });
 });

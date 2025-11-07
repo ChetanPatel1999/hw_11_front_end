@@ -1,4 +1,10 @@
-.box{
+.box {
     background-color: red;
-    width: 150px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.new-class {
+    background-color: red;
 }
