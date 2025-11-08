@@ -214,26 +214,68 @@
 
 
 // Get Content - text(), html(), and val()
+// $(document).ready(function () {
+//     $(".start").click(function () {
+//         // let text = $("div").text()   
+//         // console.log(text)
+//         // let text = $("div").html()
+//         // console.log(text)
+//         // let text = $("input").val()
+//         // console.log(text)
+//         // let text = $("a").attr("title")
+//         // console.log(text)
+
+//         // $("#para").text("hello brother");
+//         // $("div").html("<b>hello brother<b>");
+
+//         // let c = 12 + Number($("input").val());
+//         // $("#para").text(`addition = ${c}`);
+//         // $("input").val("set any value")
+
+//         // $("a").attr("title","new title")
+//         // $("a").attr("class","new-class")
+
+//         // $("#para").text((i, original) => {
+//         //     return original + " this is new text " + i;
+//         // });
+
+
+//         // $("p").text((i, original) => {
+//         //     let arr = ["apple", "savfal","banana","mango"]
+//         //     return original + arr[i];
+//         // });
+//     });
+// });
+
+//jQuery - Add Elements
+// append() - Inserts content at the end of the selected elements
+// prepend() - Inserts content at the beginning of the selected elements
+// after() - Inserts content after the selected elements
+// before() - Inserts content before the selected elements
 $(document).ready(function () {
-    $(".start").click(function () {
-        // let text = $("div").text()   
-        // console.log(text)
-        // let text = $("div").html()
-        // console.log(text)
-        // let text = $("input").val()
-        // console.log(text)
-        // let text = $("a").attr("title")
-        // console.log(text)
+    $(".start").click(function (e) {
+        //  $("div").append("hello div");  
+        //  $("div").prepend("hello div");  
+        //  $("div").after("hello div");  
+        // $("div").before("hello div");
 
-        // $("#para").text("hello brother");
-        // $("div").html("<b>hello brother<b>");
+        // let btn = document.createElement("button");
+        // btn.innerText="click me !"
 
-        // let c = 12 + Number($("input").val());
-        // $("#para").text(`addition = ${c}`);
-        // $("input").val("set any value")
+        // let btn = "<button>click me !</button>";
 
-        // $("a").attr("title","new title")
-        $("a").attr("class","new-class")
+        // let btn = $("<button></button>").text("click me!");
 
+        // $("div").append(btn);
+
+        // let btn = $("<button></button>").text("click me!");
+
+        // $("div").append(btn, "<p>my para</p>");
+
+        // $("h1").remove();
+        // $("div").remove();
+        $("div").empty();
+        // $("div").empty().text("hello").css("background-color","pink").slideUp(2000); 
+        
     });
 });
