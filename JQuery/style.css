@@ -1,7 +1,7 @@
 .box {
     background-color: red;
     width: 80px;
-    height:50px;
+    height: 50px;
     padding: 10px;
     border: 5px solid blue;
     margin: 20px;
@@ -13,8 +13,20 @@
     color: white;
     font-size: 20px;
 }
-#para{
+
+#para {
     background-color: aqua;
     color: brown;
     font-size: 30px;
+}
+
+body,
+div,
+ul,
+li,
+span,h1,h3,p {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: block;
 }

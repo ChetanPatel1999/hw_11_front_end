@@ -322,16 +322,58 @@
 // innerHeight()
 // outerWidth()
 // outerHeight()
+// $(document).ready(function () {
+//     $(".stop").click(function (e) {
+//         // res = $(".box").width();
+//         // res = $(".box").height();
+//         // res = $(".box").innerHeight();
+//         // res = $(".box").innerWidth();
+//         // res = $(".box").outerWidth();
+//         res = $(".box").outerWidth(true);
+//         console.log(res);
+//     });
+// });
+
+// jQuery Traversing - Ancestors
+// parent()
+// parents()
+// parentsUntil()
+
+// jQuery Traversing - Descendants
+// children()
+// find()
+
+
+//jQuery Traversing - Siblings
+// siblings()
+// next()
+// nextAll()
+// nextUntil()
+// prev()
+// prevAll()
+// prevUntil()
+
+
 $(document).ready(function () {
-    $(".stop").click(function (e) {
-        // res = $(".box").width();
-        // res = $(".box").height();
-        // res = $(".box").innerHeight();
-        // res = $(".box").innerWidth();
-        // res = $(".box").outerWidth();
-        res = $(".box").outerWidth(true);
-
-
-        console.log(res);
+    $("button").click(function (e) {
+        // $("span").parent().css("border", "4px solid red");
+        // $("span").parents().css("border", "4px solid red");
+        // $("span").parents("div").css("border", "4px solid red");
+        // $("span").parents().first().css("border", "4px solid red");
+        // $("span").parents().last().css("border", "4px solid red");
+        // $("span").parents().eq(2).css("border", "4px solid red");
+        // $("span").parentsUntil("body").css("border", "4px solid red");
+        // $("div").children().css("border", "4px solid red");
+        // $("li").children().css("border", "4px solid red");
+        // $("li").children().first().css("border", "4px solid red");
+        // $("div").find("span").css("border", "4px solid red");
+        // $("div").find("li").css("border", "4px solid red");
+        // $("div").find("*").css("border", "4px solid red");
+        // $("h1").siblings().css("border", "4px solid red");
+        // $("h1").next().css("border", "4px solid red");
+        // $("h1").nextAll().css("border", "4px solid red");
+        // $("h1").prev().css("border", "4px solid red");
+        // $("h1").prevAll().css("border", "4px solid red");
+        $("h1").prevUntil("p").css("border", "4px solid red");
     });
 });
