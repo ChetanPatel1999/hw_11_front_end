@@ -216,7 +216,7 @@
 // Get Content - text(), html(), and val()
 // $(document).ready(function () {
 //     $(".start").click(function () {
-//         // let text = $("div").text()   
+//         // let text = $("div").text()
 //         // console.log(text)
 //         // let text = $("div").html()
 //         // console.log(text)
@@ -252,30 +252,86 @@
 // prepend() - Inserts content at the beginning of the selected elements
 // after() - Inserts content after the selected elements
 // before() - Inserts content before the selected elements
+// $(document).ready(function () {
+//     $(".start").click(function (e) {
+//         //  $("div").append("hello div");
+//         //  $("div").prepend("hello div");
+//         //  $("div").after("hello div");
+//         // $("div").before("hello div");
+
+//         // let btn = document.createElement("button");
+//         // btn.innerText="click me !"
+
+//         // let btn = "<button>click me !</button>";
+
+//         // let btn = $("<button></button>").text("click me!");
+
+//         // $("div").append(btn);
+
+//         // let btn = $("<button></button>").text("click me!");
+
+//         // $("div").append(btn, "<p>my para</p>");
+
+//         // $("h1").remove();
+//         // $("div").remove();
+//         $("div").empty();
+//         // $("div").empty().text("hello").css("background-color","pink").slideUp(2000);
+
+//     });
+// });
+
+// Get and Set CSS Classes
+// $(document).ready(function () {
+//     $(".start").click(function (e) {
+
+//         // $("#para").addClass("new-class");
+//         // $("#para").addClass("my-class");
+//         // $("a").removeClass("ancher-class");
+
+//         $("#para").toggleClass("new-class");
+//     });
+// });
+
+
+
+// jQuery - css() Method
+// $(document).ready(function () {
+//     $(".start").click(function (e) {
+//         // let text = $("#para").css("color");
+//         // console.log(typeof text);
+
+//         // let text = $("#para").css("font-size");
+//         // console.log(text);
+
+//         // $("#para").css("font-size", "50px");
+//         // $("#para").css("color", "green");
+//         $("#para").css({
+//             "color": "green",
+//             "background-color": "black",
+//             "font-size": "50px"
+//         });
+
+//     });
+// });
+
+
+// jQuery Dimension Methods
+// width()
+// height()
+// innerWidth()
+// innerHeight()
+// outerWidth()
+// outerHeight()
 $(document).ready(function () {
-    $(".start").click(function (e) {
-        //  $("div").append("hello div");  
-        //  $("div").prepend("hello div");  
-        //  $("div").after("hello div");  
-        // $("div").before("hello div");
+    $(".stop").click(function (e) {
+        // res = $(".box").width();
+        // res = $(".box").height();
+        // res = $(".box").innerHeight();
+        // res = $(".box").innerWidth();
+        // res = $(".box").outerWidth();
+        res = $(".box").outerWidth(true);
 
-        // let btn = document.createElement("button");
-        // btn.innerText="click me !"
 
-        // let btn = "<button>click me !</button>";
-
-        // let btn = $("<button></button>").text("click me!");
-
-        // $("div").append(btn);
-
-        // let btn = $("<button></button>").text("click me!");
-
-        // $("div").append(btn, "<p>my para</p>");
-
-        // $("h1").remove();
-        // $("div").remove();
-        $("div").empty();
-        // $("div").empty().text("hello").css("background-color","pink").slideUp(2000); 
-        
+        console.log(res);
     });
 });
