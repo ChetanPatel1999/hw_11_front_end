@@ -354,26 +354,46 @@
 // prevUntil()
 
 
+// $(document).ready(function () {
+//     $("button").click(function (e) {
+//         // $("span").parent().css("border", "4px solid red");
+//         // $("span").parents().css("border", "4px solid red");
+//         // $("span").parents("div").css("border", "4px solid red");
+//         // $("span").parents().first().css("border", "4px solid red");
+//         // $("span").parents().last().css("border", "4px solid red");
+//         // $("span").parents().eq(2).css("border", "4px solid red");
+//         // $("span").parentsUntil("body").css("border", "4px solid red");
+//         // $("div").children().css("border", "4px solid red");
+//         // $("li").children().css("border", "4px solid red");
+//         // $("li").children().first().css("border", "4px solid red");
+//         // $("div").find("span").css("border", "4px solid red");
+//         // $("div").find("li").css("border", "4px solid red");
+//         // $("div").find("*").css("border", "4px solid red");
+//         // $("h1").siblings().css("border", "4px solid red");
+//         // $("h1").next().css("border", "4px solid red");
+//         // $("h1").nextAll().css("border", "4px solid red");
+//         // $("h1").prev().css("border", "4px solid red");
+//         // $("h1").prevAll().css("border", "4px solid red");
+//         $("h1").prevUntil("p").css("border", "4px solid red");
+//     });
+// });
+
+
+//ajax load method
 $(document).ready(function () {
-    $("button").click(function (e) {
-        // $("span").parent().css("border", "4px solid red");
-        // $("span").parents().css("border", "4px solid red");
-        // $("span").parents("div").css("border", "4px solid red");
-        // $("span").parents().first().css("border", "4px solid red");
-        // $("span").parents().last().css("border", "4px solid red");
-        // $("span").parents().eq(2).css("border", "4px solid red");
-        // $("span").parentsUntil("body").css("border", "4px solid red");
-        // $("div").children().css("border", "4px solid red");
-        // $("li").children().css("border", "4px solid red");
-        // $("li").children().first().css("border", "4px solid red");
-        // $("div").find("span").css("border", "4px solid red");
-        // $("div").find("li").css("border", "4px solid red");
-        // $("div").find("*").css("border", "4px solid red");
-        // $("h1").siblings().css("border", "4px solid red");
-        // $("h1").next().css("border", "4px solid red");
-        // $("h1").nextAll().css("border", "4px solid red");
-        // $("h1").prev().css("border", "4px solid red");
-        // $("h1").prevAll().css("border", "4px solid red");
-        $("h1").prevUntil("p").css("border", "4px solid red");
+    // $("button").click(function (e) {
+    //     // $("div").load("hello.txt");
+    //     $("div").load("hello.txt #p1");
+    // });
+
+    $("button").click(function () {
+        $("div").load("hello.txt", function (responseTxt, statusTxt, xhr) {
+            if (statusTxt == "success") {
+                console.log(responseTxt);
+                alert("External content loaded successfully!");
+            }
+            if (statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
     });
 });
