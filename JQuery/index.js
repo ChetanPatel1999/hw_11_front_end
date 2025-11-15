@@ -386,14 +386,35 @@ $(document).ready(function () {
     //     $("div").load("hello.txt #p1");
     // });
 
-    $("button").click(function () {
-        $("div").load("hello.txt", function (responseTxt, statusTxt, xhr) {
-            if (statusTxt == "success") {
-                console.log(responseTxt);
-                alert("External content loaded successfully!");
-            }
-            if (statusTxt == "error")
-                alert("Error: " + xhr.status + ": " + xhr.statusText);
-        });
+    // $("button").click(function () {
+    //     $("div").load("helo.txt", function (responseTxt, statusTxt, xhr) {
+    //         if (statusTxt == "success") {
+    //             console.log(responseTxt);
+    //             alert("External content loaded successfully!");
+    //         }
+    //         if (statusTxt == "error") {
+    //             console.log(xhr)
+    //             alert("Error: " + xhr.status + ": " + xhr.statusText);
+    //         }
+
+    //     });
+    // });
+
+
+    // $("button").click(function (e) {
+    //     $.get("https://dog.ceo/api/breeds/image/random", (data, status) => {
+    //         console.log(data.message)
+    //         let img = $("<img></img>").attr("src", data.message).width(100);
+    //         $("div").append(img);
+    //     })
+    // });
+
+    $("button").click(function (e) {
+        $.get("https://randomuse.me/api/", (data, status) => {
+            console.log(status)
+            console.log(data.results[0].picture.medium)
+            let img = $("<img></img>").attr("src", data.results[0].picture.medium).width(100);
+            $("div").append(img);
+        })
     });
 });
